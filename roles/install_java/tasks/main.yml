@@ -1,0 +1,11 @@
+---
+- name: Install java-open-jdk
+ # hosts: all
+ # become: yes
+  apt:
+    name: default-jre
+    state: latest
+    update_cache: yes
+
+
+# tasks file for roles/install_java
